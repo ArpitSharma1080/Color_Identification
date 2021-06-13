@@ -26,6 +26,7 @@ csv = pd.read_csv('colors.csv', names=index, header=None)
 # function to calculate minimum distance from all colors and get the most matching color
 
 def get_color_name(r, g, b):
+    global cname 
     minimum = 10000
     for i in range(len(csv)):
         d = abs(r - int(csv.loc[i, "R"])) + abs(g - int(csv.loc[i, "G"])) + abs(b - int(csv.loc[i, "B"]))
