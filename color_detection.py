@@ -7,7 +7,7 @@ import pandas as pd
 # Setting Image Path
 # colours.jpg - Sample Image
 
-img_path = r'C:\Users\dell\Desktop\New folder'
+img_path = r'C:\Users\dell\Desktop\Color Identification\colours.jpg'
 img = cv2.imread(img_path)
 
 
